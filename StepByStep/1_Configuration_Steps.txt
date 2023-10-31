@@ -1,0 +1,30 @@
+Steps to install Type Script
+
+To Install TypeScript Globally use Following command:-
+# Command:npm i -g typescript
+
+To check TypeScript Version use Following command:-
+# tsc -v
+
+Every TypeScript file showld have .ts extension
+# index.ts
+
+To Compile TypeScript code use Following Command:-
+# tsc index.js (tsc file name.ts).
+
+To create typescript configuration file do Following:-
+# tsc --init
+This created a tsconfig.json file.
+
+Uncommit Following things in tsconfig.json file.
+# "root":"./src"
+# "outDir": "./dist"
+# "removecomments":true 
+# "onEmitOnError":true
+
+Now we can generate JavaScript code from TypeScript files with Following:
+# tsc (no need to type file name).
+
+To Debug TypeScript code Uncommit Following line in tsconfig file:-
+# "sourceMap":"true"
+
